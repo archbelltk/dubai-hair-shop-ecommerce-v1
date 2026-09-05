@@ -2906,6 +2906,7 @@ button.bottom-nav-item {
     width: 320px;
     max-width: 85vw;
     height: 100vh;
+    height: 100dvh;
     background: var(--dhs-cream);
     z-index: 200;
     padding: 24px 24px 0;
@@ -2955,7 +2956,7 @@ button.bottom-nav-item {
     position: sticky;
     bottom: 0;
     background: var(--dhs-cream);
-    padding: 16px 0 24px;
+    padding: 16px 0 max(24px, env(safe-area-inset-bottom));
     margin-top: auto;
   }
   .filter-apply-btn {
