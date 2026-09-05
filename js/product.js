@@ -18,7 +18,10 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('productBreadcrumbName').textContent = product.name;
 
   const badgeMarkup = product.badge ? '<span class="product-detail-badge">' + product.badge + '</span>' : '';
-  document.getElementById('productMedia').innerHTML = dhsProductMedia(product) + badgeMarkup;
+  const productMediaEl = document.getElementById('productMedia');
+  productMediaEl.innerHTML = dhsProductMedia(product) + badgeMarkup;
+  const productMediaImg = productMediaEl.querySelector('img');
+  if (productMediaImg) productMediaImg.loading = 'eager';
 
   document.getElementById('productCategoryTag').textContent = product.categoryLabel;
   document.getElementById('productName').textContent = product.name;

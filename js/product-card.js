@@ -7,7 +7,7 @@ const DHS_PLACEHOLDER_COLORS = {
 
 function dhsProductMedia(product) {
   if (product.image) {
-    return '<img src="' + product.image + '" alt="' + product.name + '">';
+    return '<img src="' + product.image + '" alt="' + product.name + '" loading="lazy" decoding="async">';
   }
   const colors = DHS_PLACEHOLDER_COLORS[product.category] || ['#e8e4e0', '#d4c4b5'];
   const initials = product.name.split(' ').map(function (w) { return w[0]; }).slice(0, 2).join('');
