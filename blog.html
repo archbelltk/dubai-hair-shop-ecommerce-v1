@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog | Dubai Hair Shop</title>
+<meta name="description" content="Hair care tips, fashion inspiration, and skincare guides from Dubai Hair Shop.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Pinyon+Script&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+
+<!-- Announcement -->
+<div class="announcement-bar">
+  <span>Free delivery on orders over AED 1,100 &nbsp; • &nbsp; 100% Original Human Hair &nbsp; • &nbsp; Visit Our Store in Business Bay</span>
+</div>
+
+<!-- Navigation -->
+<nav class="dhs-nav">
+  <a class="nav-logo" href="index.html"><span class="logo-word">Dubai</span><span class="logo-accent">Hair</span><span class="logo-word">Shop</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html?new=1">New Arrivals</a></li>
+    <li class="nav-has-dropdown">
+      <a href="shop.html">Shop
+        <svg class="nav-caret" viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+      </a>
+      <ul class="nav-dropdown">
+        <li><a href="shop.html?category=hair-extensions">Hair Extensions</a></li>
+        <li><a href="shop.html?category=fashion-design">Fashion Design</a></li>
+        <li><a href="shop.html?category=natural-skincare">Skincare</a></li>
+      </ul>
+    </li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="blog.html" class="active">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button type="button" class="nav-icon-wrap nav-icon-btn" data-search-trigger aria-label="Search">
+      <svg class="nav-icon nav-icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    </button>
+    <a class="nav-icon-wrap" href="account.html" aria-label="My Account">
+      <svg class="nav-icon nav-icon-account" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    </a>
+    <a class="nav-icon-wrap" href="wishlist.html" aria-label="View wishlist">
+      <svg class="nav-icon" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+      <span class="nav-wishlist-badge wishlist-badge" hidden>0</span>
+    </a>
+    <a class="nav-icon-wrap" href="cart.html" aria-label="View cart">
+      <svg class="nav-icon" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      <span class="nav-cart-badge cart-badge" hidden>0</span>
+    </a>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- Search -->
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-panel">
+    <form class="search-form" id="searchForm">
+      <svg class="search-form-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="search" id="searchInput" class="search-input" placeholder="Search hair, fashion, skincare..." autocomplete="off">
+      <button type="button" class="search-close" id="searchCloseBtn" aria-label="Close search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </form>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav-overlay"></div>
+<div class="mobile-nav">
+  <button class="mobile-nav-close" aria-label="Close menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="mobile-nav-actions">
+    <button type="button" class="mobile-nav-action" data-search-trigger>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      Search
+    </button>
+    <a href="account.html" class="mobile-nav-action">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      My Account
+    </a>
+  </div>
+  <ul class="mobile-nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html?new=1">New Arrivals</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<!-- Page Header -->
+<div class="page-header">
+  <p class="breadcrumb"><a href="index.html">Home</a> / Blog</p>
+  <h1 class="page-title">The Journal</h1>
+</div>
+
+<!-- Blog -->
+<div class="blog-page">
+  <a class="blog-featured" href="#">
+    <div class="blog-featured-media" style="background: linear-gradient(135deg, #e8ddd4, #c9b8a8);">
+      <span class="blog-category-tag">Hair Care</span>
+    </div>
+    <div class="blog-featured-content">
+      <span class="blog-meta">September 2, 2026 &nbsp;•&nbsp; 5 min read</span>
+      <h2 class="blog-featured-title">5 Signs You're Ready for a Lace Front Wig</h2>
+      <p class="blog-excerpt">From protective styling to a flawless hairline in minutes, here's how to know when it's time to make the switch — and how to pick the right texture and length for your face shape.</p>
+      <span class="blog-read-more">Read Article
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </span>
+    </div>
+  </a>
+
+  <div class="blog-grid">
+    <a class="blog-card" href="#">
+      <div class="blog-card-media" style="background: linear-gradient(135deg, #f3d9df, #e998b7);">
+        <span class="blog-category-tag">Fashion</span>
+      </div>
+      <span class="blog-meta">August 26, 2026</span>
+      <h3 class="blog-card-title">How to Style Ankara Prints for Every Season</h3>
+      <p class="blog-excerpt">Bold prints don't have to mean bold effort. Here are five easy ways to wear Ankara from the office to a weekend brunch.</p>
+    </a>
+    <a class="blog-card" href="#">
+      <div class="blog-card-media" style="background: linear-gradient(135deg, #e4ede4, #b9d3b9);">
+        <span class="blog-category-tag">Skincare</span>
+      </div>
+      <span class="blog-meta">August 18, 2026</span>
+      <h3 class="blog-card-title">The Ultimate Guide to Black Soap for Melanin-Rich Skin</h3>
+      <p class="blog-excerpt">Why this traditional African staple deserves a spot in your routine, and how to use it without over-drying your skin.</p>
+    </a>
+    <a class="blog-card" href="#">
+      <div class="blog-card-media" style="background: linear-gradient(135deg, #e8ddd4, #c9b8a8);">
+        <span class="blog-category-tag">Hair Care</span>
+      </div>
+      <span class="blog-meta">August 10, 2026</span>
+      <h3 class="blog-card-title">Bundle Care 101: Making Your Extensions Last Longer</h3>
+      <p class="blog-excerpt">Sulfate-free shampoo, silk pillowcases, and a few habits that can double the life of your bundles.</p>
+    </a>
+    <a class="blog-card" href="#">
+      <div class="blog-card-media" style="background: linear-gradient(135deg, #f3d9df, #e998b7);">
+        <span class="blog-category-tag">Fashion</span>
+      </div>
+      <span class="blog-meta">August 2, 2026</span>
+      <h3 class="blog-card-title">Dubai's Best-Kept Style Secrets: Layering Prints with Modern Cuts</h3>
+      <p class="blog-excerpt">Meet the tailoring tricks Alicia uses to make bold African prints feel right at home in a modern Dubai wardrobe.</p>
+    </a>
+    <a class="blog-card" href="#">
+      <div class="blog-card-media" style="background: linear-gradient(135deg, #e4ede4, #b9d3b9);">
+        <span class="blog-category-tag">Skincare</span>
+      </div>
+      <span class="blog-meta">July 26, 2026</span>
+      <h3 class="blog-card-title">Why Shea Butter Belongs in Your Daily Routine</h3>
+      <p class="blog-excerpt">A closer look at the botanical behind our Shea Glow Serum, and the science of why it works so well for dry, melanin-rich skin.</p>
+    </a>
+    <a class="blog-card" href="#">
+      <div class="blog-card-media" style="background: linear-gradient(135deg, #ece3d6, #d8c7b0);">
+        <span class="blog-category-tag">Lifestyle</span>
+      </div>
+      <span class="blog-meta">July 18, 2026</span>
+      <h3 class="blog-card-title">A Day at the Dubai Hair Shop Studio</h3>
+      <p class="blog-excerpt">Go behind the scenes in Business Bay — from fitting consultations to the final stitch on a custom gown.</p>
+    </a>
+  </div>
+</div>
+
+<!-- Newsletter -->
+<div class="newsletter">
+  <h2 class="newsletter-title">Let's Stay in Touch</h2>
+  <p class="newsletter-sub">Get early access to new collections, exclusive Dubai pop-up events, and beauty tips.</p>
+  <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing, Queen!');">
+    <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+    <button type="submit" class="newsletter-btn">Subscribe</button>
+  </form>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand"><span class="logo-word">Dubai</span><span class="logo-accent">Hair</span><span class="logo-word">Shop</span></div>
+      <p class="footer-desc">Premium human hair extensions, bespoke African fashion, and natural skincare, curated for the modern woman in Dubai.</p>
+      <p class="footer-desc" style="margin-bottom:0;">Crystal Tower, 11th Floor<br>Business Bay, Dubai, UAE<br>+971 56 766 0733</p>
+      <div class="social-links">
+        <a class="social-icon" href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a class="social-icon" href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 8h2V4h-2a5 5 0 0 0-5 5v2H8v4h2v6h4v-6h2.5l.5-4H14V9a1 1 0 0 1 1-1z"/></svg>
+        </a>
+        <a class="social-icon" href="#" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M15 3a5 5 0 0 0 5 5"/></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-title">Shop</div>
+      <ul class="footer-links">
+        <li><a href="shop.html?category=hair-extensions">Hair Extensions</a></li>
+        <li><a href="shop.html?category=fashion-design">Fashion Design</a></li>
+        <li><a href="shop.html?category=natural-skincare">Skincare</a></li>
+        <li><a href="shop.html">All Products</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-title">Visit us</div>
+      <ul class="footer-links">
+        <li><a href="about.html#visit">Dubai Studio</a></li>
+        <li><a href="contact.html">Book Appointment</a></li>
+        <li><a href="#">Wholesale</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-title">Help</div>
+      <ul class="footer-links">
+        <li><a href="shipping-returns.html">Shipping & Returns</a></li>
+        <li><a href="hair-care-guide.html">Hair Care Guide</a></li>
+        <li><a href="size-chart.html">Size Chart</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 Dubai Hair Shop. All rights reserved. Designed by <a href="https://www.linkedin.com/in/archbell-maunganidze/" target="_blank" rel="noopener">ArchyTk</a>.
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a class="whatsapp-float" href="https://wa.me/971567660733" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <span class="whatsapp-float-ring"></span>
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.8 8.8 0 0 0 3.16 16.8L2 22l5.36-1.14A8.8 8.8 0 0 0 12 22a8.8 8.8 0 0 0 5.6-15.68zM12 20.2a6.9 6.9 0 0 1-3.53-.96l-.25-.15-2.83.6.6-2.76-.16-.28A6.9 6.9 0 1 1 12 20.2zm3.78-5.17c-.2-.1-1.2-.6-1.39-.66-.19-.07-.32-.1-.46.1-.13.2-.52.66-.64.8-.12.13-.24.15-.44.05-.2-.1-.86-.32-1.63-1.02-.6-.54-1.01-1.2-1.13-1.4-.12-.2-.01-.31.09-.4.09-.1.2-.24.3-.36.1-.12.13-.2.2-.34.07-.13.03-.25-.02-.35-.05-.1-.46-1.1-.63-1.5-.17-.4-.33-.35-.46-.35h-.4c-.13 0-.34.05-.52.25s-.68.67-.68 1.63.7 1.9.8 2.03c.1.13 1.37 2.1 3.32 2.94.46.2.83.32 1.11.4.47.15.9.13 1.24.08.38-.06 1.2-.49 1.37-.96.17-.47.17-.87.12-.96-.05-.09-.18-.14-.38-.24z"/></svg>
+</a>
+
+<!-- Mobile Bottom Nav -->
+<nav class="mobile-bottom-nav">
+  <a href="shop.html" class="bottom-nav-item">
+    <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+    <span class="bottom-nav-label">Shop</span>
+  </a>
+  <a href="wishlist.html" class="bottom-nav-item">
+    <span class="bottom-nav-icon-wrap">
+      <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+      <span class="bottom-nav-badge wishlist-badge" hidden>0</span>
+    </span>
+    <span class="bottom-nav-label">Wishlist</span>
+  </a>
+  <button type="button" class="bottom-nav-item" data-search-trigger>
+    <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <span class="bottom-nav-label">Search</span>
+  </button>
+  <a href="account.html" class="bottom-nav-item">
+    <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    <span class="bottom-nav-label">Account</span>
+  </a>
+  <a href="cart.html" class="bottom-nav-item">
+    <span class="bottom-nav-icon-wrap">
+      <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      <span class="bottom-nav-badge cart-badge" hidden>0</span>
+    </span>
+    <span class="bottom-nav-label">Cart</span>
+  </a>
+</nav>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/wishlist.js"></script>
+<script src="js/product-card.js"></script>
+<script src="js/search.js"></script>
+<script src="js/mobile-nav.js?v=2"></script>
+
+</body>
+</html>

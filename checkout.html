@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout | Dubai Hair Shop</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Pinyon+Script&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+
+<!-- Announcement -->
+<div class="announcement-bar">
+  <span>Free delivery on orders over AED 1,100 &nbsp; • &nbsp; 100% Original Human Hair &nbsp; • &nbsp; Visit Our Store in Business Bay</span>
+</div>
+
+<!-- Navigation -->
+<nav class="dhs-nav">
+  <a class="nav-logo" href="index.html"><span class="logo-word">Dubai</span><span class="logo-accent">Hair</span><span class="logo-word">Shop</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html?new=1">New Arrivals</a></li>
+    <li class="nav-has-dropdown">
+      <a href="shop.html">Shop
+        <svg class="nav-caret" viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+      </a>
+      <ul class="nav-dropdown">
+        <li><a href="shop.html?category=hair-extensions">Hair Extensions</a></li>
+        <li><a href="shop.html?category=fashion-design">Fashion Design</a></li>
+        <li><a href="shop.html?category=natural-skincare">Skincare</a></li>
+      </ul>
+    </li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button type="button" class="nav-icon-wrap nav-icon-btn" data-search-trigger aria-label="Search">
+      <svg class="nav-icon nav-icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    </button>
+    <a class="nav-icon-wrap" href="account.html" aria-label="My Account">
+      <svg class="nav-icon nav-icon-account" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    </a>
+    <a class="nav-icon-wrap" href="wishlist.html" aria-label="View wishlist">
+      <svg class="nav-icon" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+      <span class="nav-wishlist-badge wishlist-badge" hidden>0</span>
+    </a>
+    <a class="nav-icon-wrap" href="cart.html" aria-label="View cart">
+      <svg class="nav-icon" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      <span class="nav-cart-badge cart-badge" hidden>0</span>
+    </a>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- Search -->
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-panel">
+    <form class="search-form" id="searchForm">
+      <svg class="search-form-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="search" id="searchInput" class="search-input" placeholder="Search hair, fashion, skincare..." autocomplete="off">
+      <button type="button" class="search-close" id="searchCloseBtn" aria-label="Close search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </form>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav-overlay"></div>
+<div class="mobile-nav">
+  <button class="mobile-nav-close" aria-label="Close menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="mobile-nav-actions">
+    <button type="button" class="mobile-nav-action" data-search-trigger>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      Search
+    </button>
+    <a href="account.html" class="mobile-nav-action">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      My Account
+    </a>
+  </div>
+  <ul class="mobile-nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html?new=1">New Arrivals</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<!-- Page Header -->
+<div class="page-header">
+  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="cart.html">Cart</a> / Checkout</p>
+  <h1 class="page-title">Checkout</h1>
+</div>
+
+<!-- Checkout -->
+<div class="checkout-page">
+  <div class="checkout-layout" id="checkoutLayout">
+    <form class="checkout-form" id="checkoutForm" novalidate>
+      <div class="checkout-section">
+        <h2 class="checkout-section-title">Contact Information</h2>
+        <div class="form-row">
+          <label class="form-field">
+            <span>Email Address</span>
+            <input type="email" name="email" required>
+          </label>
+          <label class="form-field">
+            <span>Phone Number</span>
+            <input type="tel" name="phone" required>
+          </label>
+        </div>
+      </div>
+
+      <div class="checkout-section">
+        <h2 class="checkout-section-title">Shipping Address</h2>
+        <div class="form-row">
+          <label class="form-field">
+            <span>Full Name</span>
+            <input type="text" name="fullName" required>
+          </label>
+        </div>
+        <div class="form-row">
+          <label class="form-field form-field-wide">
+            <span>Street Address</span>
+            <input type="text" name="address" required>
+          </label>
+        </div>
+        <div class="form-row">
+          <label class="form-field">
+            <span>City</span>
+            <input type="text" name="city" required>
+          </label>
+          <label class="form-field">
+            <span>Emirate</span>
+            <input type="text" name="emirate" placeholder="e.g. Dubai" required>
+          </label>
+        </div>
+      </div>
+
+      <div class="checkout-section">
+        <h2 class="checkout-section-title">Payment Method</h2>
+        <div class="payment-method-options">
+          <label class="payment-method-option">
+            <input type="radio" name="paymentMethod" value="card" checked> Credit / Debit Card
+          </label>
+          <label class="payment-method-option">
+            <input type="radio" name="paymentMethod" value="later"> Pay Later
+          </label>
+        </div>
+        <div id="cardFields">
+          <div class="form-row">
+            <label class="form-field form-field-wide">
+              <span>Name on Card</span>
+              <input type="text" name="cardName" required>
+            </label>
+          </div>
+          <div class="form-row">
+            <label class="form-field form-field-wide">
+              <span>Card Number</span>
+              <input type="text" name="cardNumber" inputmode="numeric" pattern="[0-9\s]{13,19}" placeholder="0000 0000 0000 0000" required>
+            </label>
+          </div>
+          <div class="form-row">
+            <label class="form-field">
+              <span>Expiry Date</span>
+              <input type="text" name="expiry" placeholder="MM/YY" pattern="(0[1-9]|1[0-2])\/[0-9]{2}" required>
+            </label>
+            <label class="form-field">
+              <span>CVC</span>
+              <input type="text" name="cvc" inputmode="numeric" pattern="[0-9]{3,4}" required>
+            </label>
+          </div>
+        </div>
+        <p class="pay-later-note" id="payLaterNote" hidden>Split your payment into 4 interest-free installments. No card details are required now &mdash; you'll complete verification after placing your order.</p>
+      </div>
+
+      <button type="submit" class="checkout-btn place-order-btn">Place Order</button>
+    </form>
+
+    <aside class="checkout-summary">
+      <h2 class="cart-summary-title">Order Summary</h2>
+      <div id="summaryItems" class="summary-items"></div>
+      <div class="cart-summary-row">
+        <span>Subtotal</span>
+        <span id="checkoutSubtotal">AED 0</span>
+      </div>
+      <div class="cart-summary-row" id="checkoutDiscountRow" hidden>
+        <span>Discount</span>
+        <span id="checkoutDiscount">-AED 0</span>
+      </div>
+      <div class="cart-summary-row">
+        <span id="checkoutShippingLabel">Shipping</span>
+        <span id="checkoutShipping">Free</span>
+      </div>
+      <div class="cart-summary-row cart-summary-total">
+        <span>Total</span>
+        <span id="checkoutTotal">AED 0</span>
+      </div>
+      <div class="checkout-order-notes" id="checkoutOrderNotes" hidden>
+        <strong>Order Notes</strong>
+        <span id="checkoutOrderNotesText"></span>
+      </div>
+    </aside>
+  </div>
+
+  <div class="checkout-empty" id="checkoutEmpty" hidden>
+    <p class="cart-empty-text">Your cart is empty. Add some products before checking out.</p>
+    <a class="checkout-btn cart-empty-btn" href="shop.html">Continue Shopping</a>
+  </div>
+
+  <div class="checkout-confirmation" id="checkoutConfirmation" hidden>
+    <svg class="confirmation-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+    <h2 class="confirmation-title">Thank You, Queen!</h2>
+    <p class="confirmation-text">Your order has been placed successfully. A confirmation email is on its way.</p>
+    <div class="confirmation-details">
+      <div><span>Order Number</span><strong id="orderNumber"></strong></div>
+      <div><span>Order Total</span><strong id="orderTotal"></strong></div>
+    </div>
+    <a class="checkout-btn" href="shop.html">Continue Shopping</a>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand"><span class="logo-word">Dubai</span><span class="logo-accent">Hair</span><span class="logo-word">Shop</span></div>
+      <p class="footer-desc">Premium human hair extensions, bespoke African fashion, and natural skincare, curated for the modern woman in Dubai.</p>
+      <p class="footer-desc" style="margin-bottom:0;">Crystal Tower, 11th Floor<br>Business Bay, Dubai, UAE<br>+971 56 766 0733</p>
+      <div class="social-links">
+        <a class="social-icon" href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a class="social-icon" href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 8h2V4h-2a5 5 0 0 0-5 5v2H8v4h2v6h4v-6h2.5l.5-4H14V9a1 1 0 0 1 1-1z"/></svg>
+        </a>
+        <a class="social-icon" href="#" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M15 3a5 5 0 0 0 5 5"/></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-title">Shop</div>
+      <ul class="footer-links">
+        <li><a href="shop.html?category=hair-extensions">Hair Extensions</a></li>
+        <li><a href="shop.html?category=fashion-design">Fashion Design</a></li>
+        <li><a href="shop.html?category=natural-skincare">Skincare</a></li>
+        <li><a href="shop.html">All Products</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-title">Visit us</div>
+      <ul class="footer-links">
+        <li><a href="about.html#visit">Dubai Studio</a></li>
+        <li><a href="contact.html">Book Appointment</a></li>
+        <li><a href="#">Wholesale</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-title">Help</div>
+      <ul class="footer-links">
+        <li><a href="shipping-returns.html">Shipping & Returns</a></li>
+        <li><a href="hair-care-guide.html">Hair Care Guide</a></li>
+        <li><a href="size-chart.html">Size Chart</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 Dubai Hair Shop. All rights reserved. Designed by <a href="https://www.linkedin.com/in/archbell-maunganidze/" target="_blank" rel="noopener">ArchyTk</a>.
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/wishlist.js"></script>
+<script src="js/product-card.js"></script>
+<script src="js/search.js"></script>
+<script src="js/checkout.js"></script>
+<script src="js/mobile-nav.js?v=2"></script>
+
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Size Chart | Dubai Hair Shop</title>
+<meta name="description" content="Size chart and measuring guide for Alicia Tally fashion pieces at Dubai Hair Shop.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Pinyon+Script&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+
+<!-- Announcement -->
+<div class="announcement-bar">
+  <span>Free delivery on orders over AED 1,100 &nbsp; • &nbsp; 100% Original Human Hair &nbsp; • &nbsp; Visit Our Store in Business Bay</span>
+</div>
+
+<!-- Navigation -->
+<nav class="dhs-nav">
+  <a class="nav-logo" href="index.html"><span class="logo-word">Dubai</span><span class="logo-accent">Hair</span><span class="logo-word">Shop</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html?new=1">New Arrivals</a></li>
+    <li class="nav-has-dropdown">
+      <a href="shop.html">Shop
+        <svg class="nav-caret" viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+      </a>
+      <ul class="nav-dropdown">
+        <li><a href="shop.html?category=hair-extensions">Hair Extensions</a></li>
+        <li><a href="shop.html?category=fashion-design">Fashion Design</a></li>
+        <li><a href="shop.html?category=natural-skincare">Skincare</a></li>
+      </ul>
+    </li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button type="button" class="nav-icon-wrap nav-icon-btn" data-search-trigger aria-label="Search">
+      <svg class="nav-icon nav-icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    </button>
+    <a class="nav-icon-wrap" href="account.html" aria-label="My Account">
+      <svg class="nav-icon nav-icon-account" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    </a>
+    <a class="nav-icon-wrap" href="wishlist.html" aria-label="View wishlist">
+      <svg class="nav-icon" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+      <span class="nav-wishlist-badge wishlist-badge" hidden>0</span>
+    </a>
+    <a class="nav-icon-wrap" href="cart.html" aria-label="View cart">
+      <svg class="nav-icon" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      <span class="nav-cart-badge cart-badge" hidden>0</span>
+    </a>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- Search -->
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-panel">
+    <form class="search-form" id="searchForm">
+      <svg class="search-form-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="search" id="searchInput" class="search-input" placeholder="Search hair, fashion, skincare..." autocomplete="off">
+      <button type="button" class="search-close" id="searchCloseBtn" aria-label="Close search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </form>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav-overlay"></div>
+<div class="mobile-nav">
+  <button class="mobile-nav-close" aria-label="Close menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="mobile-nav-actions">
+    <button type="button" class="mobile-nav-action" data-search-trigger>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      Search
+    </button>
+    <a href="account.html" class="mobile-nav-action">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      My Account
+    </a>
+  </div>
+  <ul class="mobile-nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html?new=1">New Arrivals</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<!-- Page Header -->
+<div class="page-header">
+  <p class="breadcrumb"><a href="index.html">Home</a> / Size Chart</p>
+  <h1 class="page-title">Size Chart</h1>
+</div>
+
+<!-- Size Chart -->
+<div class="policy-page">
+  <p class="policy-intro">All Alicia Tally fashion pieces are cut to these standard measurements. Between sizes or want a fully bespoke fit? We offer made-to-measure tailoring at our Business Bay studio.</p>
+
+  <div class="policy-section">
+    <h2 class="policy-section-title">Women's Size Chart</h2>
+    <div class="policy-table-wrap">
+      <table class="policy-table">
+        <thead>
+          <tr>
+            <th>Size</th>
+            <th>Bust (cm)</th>
+            <th>Waist (cm)</th>
+            <th>Hips (cm)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>XS</td>
+            <td>81 – 84</td>
+            <td>61 – 64</td>
+            <td>88 – 91</td>
+          </tr>
+          <tr>
+            <td>S</td>
+            <td>85 – 88</td>
+            <td>65 – 68</td>
+            <td>92 – 95</td>
+          </tr>
+          <tr>
+            <td>M</td>
+            <td>89 – 93</td>
+            <td>69 – 73</td>
+            <td>96 – 100</td>
+          </tr>
+          <tr>
+            <td>L</td>
+            <td>94 – 99</td>
+            <td>74 – 79</td>
+            <td>101 – 106</td>
+          </tr>
+          <tr>
+            <td>XL</td>
+            <td>100 – 106</td>
+            <td>80 – 86</td>
+            <td>107 – 113</td>
+          </tr>
+          <tr>
+            <td>XXL</td>
+            <td>107 – 113</td>
+            <td>87 – 93</td>
+            <td>114 – 120</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="policy-text">Measurements are body measurements, not garment measurements. All figures in centimeters.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2 class="policy-section-title">How to Measure</h2>
+    <ul class="policy-list">
+      <li><strong>Bust</strong> — Wrap the tape around the fullest part of your chest, keeping it level across your back.</li>
+      <li><strong>Waist</strong> — Measure around the narrowest part of your natural waistline, above the belly button.</li>
+      <li><strong>Hips</strong> — Measure around the fullest part of your hips, roughly 20cm below your waistline.</li>
+    </ul>
+    <p class="policy-text">Use a soft measuring tape and keep it snug but not tight for the most accurate fit.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2 class="policy-section-title">Custom & Bespoke Sizing</h2>
+    <p class="policy-text">Ordering a custom or made-to-order piece? Alicia and her team can tailor any design to your exact measurements — just mention it when you place your order or book a fitting consultation at our studio.</p>
+  </div>
+
+  <div class="policy-cta">
+    <a class="checkout-btn" href="contact.html" style="display:inline-flex; width:auto; margin-top:0;">Book a Fitting</a>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand"><span class="logo-word">Dubai</span><span class="logo-accent">Hair</span><span class="logo-word">Shop</span></div>
+      <p class="footer-desc">Premium human hair extensions, bespoke African fashion, and natural skincare, curated for the modern woman in Dubai.</p>
+      <p class="footer-desc" style="margin-bottom:0;">Crystal Tower, 11th Floor<br>Business Bay, Dubai, UAE<br>+971 56 766 0733</p>
+      <div class="social-links">
+        <a class="social-icon" href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a class="social-icon" href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 8h2V4h-2a5 5 0 0 0-5 5v2H8v4h2v6h4v-6h2.5l.5-4H14V9a1 1 0 0 1 1-1z"/></svg>
+        </a>
+        <a class="social-icon" href="#" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M15 3a5 5 0 0 0 5 5"/></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-title">Shop</div>
+      <ul class="footer-links">
+        <li><a href="shop.html?category=hair-extensions">Hair Extensions</a></li>
+        <li><a href="shop.html?category=fashion-design">Fashion Design</a></li>
+        <li><a href="shop.html?category=natural-skincare">Skincare</a></li>
+        <li><a href="shop.html">All Products</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-title">Visit us</div>
+      <ul class="footer-links">
+        <li><a href="about.html#visit">Dubai Studio</a></li>
+        <li><a href="contact.html">Book Appointment</a></li>
+        <li><a href="#">Wholesale</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-title">Help</div>
+      <ul class="footer-links">
+        <li><a href="shipping-returns.html">Shipping & Returns</a></li>
+        <li><a href="hair-care-guide.html">Hair Care Guide</a></li>
+        <li><a href="size-chart.html">Size Chart</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 Dubai Hair Shop. All rights reserved. Designed by <a href="https://www.linkedin.com/in/archbell-maunganidze/" target="_blank" rel="noopener">ArchyTk</a>.
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a class="whatsapp-float" href="https://wa.me/971567660733" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <span class="whatsapp-float-ring"></span>
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.8 8.8 0 0 0 3.16 16.8L2 22l5.36-1.14A8.8 8.8 0 0 0 12 22a8.8 8.8 0 0 0 5.6-15.68zM12 20.2a6.9 6.9 0 0 1-3.53-.96l-.25-.15-2.83.6.6-2.76-.16-.28A6.9 6.9 0 1 1 12 20.2zm3.78-5.17c-.2-.1-1.2-.6-1.39-.66-.19-.07-.32-.1-.46.1-.13.2-.52.66-.64.8-.12.13-.24.15-.44.05-.2-.1-.86-.32-1.63-1.02-.6-.54-1.01-1.2-1.13-1.4-.12-.2-.01-.31.09-.4.09-.1.2-.24.3-.36.1-.12.13-.2.2-.34.07-.13.03-.25-.02-.35-.05-.1-.46-1.1-.63-1.5-.17-.4-.33-.35-.46-.35h-.4c-.13 0-.34.05-.52.25s-.68.67-.68 1.63.7 1.9.8 2.03c.1.13 1.37 2.1 3.32 2.94.46.2.83.32 1.11.4.47.15.9.13 1.24.08.38-.06 1.2-.49 1.37-.96.17-.47.17-.87.12-.96-.05-.09-.18-.14-.38-.24z"/></svg>
+</a>
+
+<!-- Mobile Bottom Nav -->
+<nav class="mobile-bottom-nav">
+  <a href="shop.html" class="bottom-nav-item">
+    <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+    <span class="bottom-nav-label">Shop</span>
+  </a>
+  <a href="wishlist.html" class="bottom-nav-item">
+    <span class="bottom-nav-icon-wrap">
+      <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+      <span class="bottom-nav-badge wishlist-badge" hidden>0</span>
+    </span>
+    <span class="bottom-nav-label">Wishlist</span>
+  </a>
+  <button type="button" class="bottom-nav-item" data-search-trigger>
+    <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <span class="bottom-nav-label">Search</span>
+  </button>
+  <a href="account.html" class="bottom-nav-item">
+    <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    <span class="bottom-nav-label">Account</span>
+  </a>
+  <a href="cart.html" class="bottom-nav-item">
+    <span class="bottom-nav-icon-wrap">
+      <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      <span class="bottom-nav-badge cart-badge" hidden>0</span>
+    </span>
+    <span class="bottom-nav-label">Cart</span>
+  </a>
+</nav>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/wishlist.js"></script>
+<script src="js/product-card.js"></script>
+<script src="js/search.js"></script>
+<script src="js/mobile-nav.js?v=2"></script>
+
+</body>
+</html>

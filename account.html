@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Account | Dubai Hair Shop</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Pinyon+Script&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+
+<!-- Announcement -->
+<div class="announcement-bar">
+  <span>Free delivery on orders over AED 1,100 &nbsp; • &nbsp; 100% Original Human Hair &nbsp; • &nbsp; Visit Our Store in Business Bay</span>
+</div>
+
+<!-- Navigation -->
+<nav class="dhs-nav">
+  <a class="nav-logo" href="index.html"><span class="logo-word">Dubai</span><span class="logo-accent">Hair</span><span class="logo-word">Shop</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html?new=1">New Arrivals</a></li>
+    <li class="nav-has-dropdown">
+      <a href="shop.html">Shop
+        <svg class="nav-caret" viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+      </a>
+      <ul class="nav-dropdown">
+        <li><a href="shop.html?category=hair-extensions">Hair Extensions</a></li>
+        <li><a href="shop.html?category=fashion-design">Fashion Design</a></li>
+        <li><a href="shop.html?category=natural-skincare">Skincare</a></li>
+      </ul>
+    </li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button type="button" class="nav-icon-wrap nav-icon-btn" data-search-trigger aria-label="Search">
+      <svg class="nav-icon nav-icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    </button>
+    <a class="nav-icon-wrap" href="account.html" aria-label="My Account">
+      <svg class="nav-icon nav-icon-account" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    </a>
+    <a class="nav-icon-wrap" href="wishlist.html" aria-label="View wishlist">
+      <svg class="nav-icon" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+      <span class="nav-wishlist-badge wishlist-badge" hidden>0</span>
+    </a>
+    <a class="nav-icon-wrap" href="cart.html" aria-label="View cart">
+      <svg class="nav-icon" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      <span class="nav-cart-badge cart-badge" hidden>0</span>
+    </a>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- Search -->
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-panel">
+    <form class="search-form" id="searchForm">
+      <svg class="search-form-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="search" id="searchInput" class="search-input" placeholder="Search hair, fashion, skincare..." autocomplete="off">
+      <button type="button" class="search-close" id="searchCloseBtn" aria-label="Close search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </form>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav-overlay"></div>
+<div class="mobile-nav">
+  <button class="mobile-nav-close" aria-label="Close menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="mobile-nav-actions">
+    <button type="button" class="mobile-nav-action" data-search-trigger>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      Search
+    </button>
+    <a href="account.html" class="mobile-nav-action">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      My Account
+    </a>
+  </div>
+  <ul class="mobile-nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html?new=1">New Arrivals</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<!-- Page Header -->
+<div class="page-header">
+  <p class="breadcrumb"><a href="index.html">Home</a> / My Account</p>
+  <h1 class="page-title">My Account</h1>
+</div>
+
+<!-- Account -->
+<div class="account-page">
+  <div class="account-layout">
+    <aside class="account-sidebar">
+      <div class="account-profile">
+        <div class="account-avatar" id="accountAvatar">DH</div>
+        <div class="account-profile-name" id="accountProfileName">Guest User</div>
+        <div class="account-profile-email" id="accountProfileEmail"></div>
+      </div>
+      <nav class="account-tabs" id="accountTabs">
+        <button type="button" class="account-tab active" data-tab="details">Account Details</button>
+        <button type="button" class="account-tab" data-tab="orders">Order History</button>
+        <a class="account-tab" href="wishlist.html">Wishlist</a>
+      </nav>
+    </aside>
+
+    <div class="account-main">
+      <section class="account-panel" id="panel-details">
+        <h2 class="checkout-section-title">Account Details</h2>
+        <form id="accountForm" novalidate>
+          <div class="form-row">
+            <label class="form-field form-field-wide">
+              <span>Full Name</span>
+              <input type="text" name="fullName" id="accountFullName" required>
+            </label>
+          </div>
+          <div class="form-row">
+            <label class="form-field">
+              <span>Email Address</span>
+              <input type="email" name="email" id="accountEmail" required>
+            </label>
+            <label class="form-field">
+              <span>Phone Number</span>
+              <input type="tel" name="phone" id="accountPhone" required>
+            </label>
+          </div>
+          <div class="form-row">
+            <label class="form-field form-field-wide">
+              <span>Delivery Address</span>
+              <input type="text" name="address" id="accountAddress" placeholder="Street, City, Emirate">
+            </label>
+          </div>
+          <button type="submit" class="checkout-btn account-save-btn">Save Changes</button>
+          <p class="account-save-message" id="accountSaveMessage" hidden>Your changes have been saved.</p>
+        </form>
+      </section>
+
+      <section class="account-panel" id="panel-orders" hidden>
+        <h2 class="checkout-section-title">Order History</h2>
+        <div id="accountOrders"></div>
+        <div class="cart-empty" id="accountOrdersEmpty" hidden>
+          <p class="cart-empty-text">You haven't placed any orders yet.</p>
+          <a class="checkout-btn cart-empty-btn" href="shop.html">Start Shopping</a>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand"><span class="logo-word">Dubai</span><span class="logo-accent">Hair</span><span class="logo-word">Shop</span></div>
+      <p class="footer-desc">Premium human hair extensions, bespoke African fashion, and natural skincare, curated for the modern woman in Dubai.</p>
+      <p class="footer-desc" style="margin-bottom:0;">Crystal Tower, 11th Floor<br>Business Bay, Dubai, UAE<br>+971 56 766 0733</p>
+      <div class="social-links">
+        <a class="social-icon" href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a class="social-icon" href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 8h2V4h-2a5 5 0 0 0-5 5v2H8v4h2v6h4v-6h2.5l.5-4H14V9a1 1 0 0 1 1-1z"/></svg>
+        </a>
+        <a class="social-icon" href="#" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M15 3a5 5 0 0 0 5 5"/></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-title">Shop</div>
+      <ul class="footer-links">
+        <li><a href="shop.html?category=hair-extensions">Hair Extensions</a></li>
+        <li><a href="shop.html?category=fashion-design">Fashion Design</a></li>
+        <li><a href="shop.html?category=natural-skincare">Skincare</a></li>
+        <li><a href="shop.html">All Products</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-title">Visit us</div>
+      <ul class="footer-links">
+        <li><a href="about.html#visit">Dubai Studio</a></li>
+        <li><a href="contact.html">Book Appointment</a></li>
+        <li><a href="#">Wholesale</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-title">Help</div>
+      <ul class="footer-links">
+        <li><a href="shipping-returns.html">Shipping & Returns</a></li>
+        <li><a href="hair-care-guide.html">Hair Care Guide</a></li>
+        <li><a href="size-chart.html">Size Chart</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 Dubai Hair Shop. All rights reserved. Designed by <a href="https://www.linkedin.com/in/archbell-maunganidze/" target="_blank" rel="noopener">ArchyTk</a>.
+  </div>
+</footer>
+
+<!-- Mobile Bottom Nav -->
+<nav class="mobile-bottom-nav">
+  <a href="shop.html" class="bottom-nav-item">
+    <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+    <span class="bottom-nav-label">Shop</span>
+  </a>
+  <a href="wishlist.html" class="bottom-nav-item">
+    <span class="bottom-nav-icon-wrap">
+      <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+      <span class="bottom-nav-badge wishlist-badge" hidden>0</span>
+    </span>
+    <span class="bottom-nav-label">Wishlist</span>
+  </a>
+  <button type="button" class="bottom-nav-item" data-search-trigger>
+    <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <span class="bottom-nav-label">Search</span>
+  </button>
+  <a href="account.html" class="bottom-nav-item">
+    <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    <span class="bottom-nav-label">Account</span>
+  </a>
+  <a href="cart.html" class="bottom-nav-item">
+    <span class="bottom-nav-icon-wrap">
+      <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      <span class="bottom-nav-badge cart-badge" hidden>0</span>
+    </span>
+    <span class="bottom-nav-label">Cart</span>
+  </a>
+</nav>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/wishlist.js"></script>
+<script src="js/product-card.js"></script>
+<script src="js/search.js"></script>
+<script src="js/account.js"></script>
+<script src="js/mobile-nav.js?v=2"></script>
+
+</body>
+</html>

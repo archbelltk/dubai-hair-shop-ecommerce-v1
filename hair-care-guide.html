@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hair Care Guide | Dubai Hair Shop</title>
+<meta name="description" content="How to wash, detangle, style, and store your hair extensions and wigs to make them last, from Dubai Hair Shop.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Pinyon+Script&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+
+<!-- Announcement -->
+<div class="announcement-bar">
+  <span>Free delivery on orders over AED 1,100 &nbsp; • &nbsp; 100% Original Human Hair &nbsp; • &nbsp; Visit Our Store in Business Bay</span>
+</div>
+
+<!-- Navigation -->
+<nav class="dhs-nav">
+  <a class="nav-logo" href="index.html"><span class="logo-word">Dubai</span><span class="logo-accent">Hair</span><span class="logo-word">Shop</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html?new=1">New Arrivals</a></li>
+    <li class="nav-has-dropdown">
+      <a href="shop.html">Shop
+        <svg class="nav-caret" viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+      </a>
+      <ul class="nav-dropdown">
+        <li><a href="shop.html?category=hair-extensions">Hair Extensions</a></li>
+        <li><a href="shop.html?category=fashion-design">Fashion Design</a></li>
+        <li><a href="shop.html?category=natural-skincare">Skincare</a></li>
+      </ul>
+    </li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button type="button" class="nav-icon-wrap nav-icon-btn" data-search-trigger aria-label="Search">
+      <svg class="nav-icon nav-icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    </button>
+    <a class="nav-icon-wrap" href="account.html" aria-label="My Account">
+      <svg class="nav-icon nav-icon-account" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    </a>
+    <a class="nav-icon-wrap" href="wishlist.html" aria-label="View wishlist">
+      <svg class="nav-icon" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+      <span class="nav-wishlist-badge wishlist-badge" hidden>0</span>
+    </a>
+    <a class="nav-icon-wrap" href="cart.html" aria-label="View cart">
+      <svg class="nav-icon" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      <span class="nav-cart-badge cart-badge" hidden>0</span>
+    </a>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- Search -->
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-panel">
+    <form class="search-form" id="searchForm">
+      <svg class="search-form-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="search" id="searchInput" class="search-input" placeholder="Search hair, fashion, skincare..." autocomplete="off">
+      <button type="button" class="search-close" id="searchCloseBtn" aria-label="Close search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </form>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav-overlay"></div>
+<div class="mobile-nav">
+  <button class="mobile-nav-close" aria-label="Close menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="mobile-nav-actions">
+    <button type="button" class="mobile-nav-action" data-search-trigger>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      Search
+    </button>
+    <a href="account.html" class="mobile-nav-action">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      My Account
+    </a>
+  </div>
+  <ul class="mobile-nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html?new=1">New Arrivals</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<!-- Page Header -->
+<div class="page-header">
+  <p class="breadcrumb"><a href="index.html">Home</a> / Hair Care Guide</p>
+  <h1 class="page-title">Hair Care Guide</h1>
+</div>
+
+<div class="policy-page" style="padding-bottom:48px;">
+  <p class="policy-intro">Virgin human hair can last a year or more with the right routine. Here are the habits our stylists swear by to keep your bundles and wigs soft, tangle-free, and looking freshly installed.</p>
+</div>
+
+<!-- Care Tips -->
+<div class="care-tips-grid">
+  <div class="care-tip-item">
+    <div class="care-tip-icon-wrap">
+      <svg class="care-tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12a8 8 0 1 1 16 0"/><path d="M4 12v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6"/><path d="M9 12v6"/><path d="M15 12v6"/></svg>
+    </div>
+    <div>
+      <div class="care-tip-title">Wash Gently, Not Often</div>
+      <div class="care-tip-desc">Wash every 10–15 wears with a sulfate-free shampoo, working in downward strokes to avoid tangling. Always condition mid-length to ends.</div>
+    </div>
+  </div>
+  <div class="care-tip-item">
+    <div class="care-tip-icon-wrap">
+      <svg class="care-tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4v16"/><path d="M4 4c4 0 6 2 6 5s-2 5-6 5"/><path d="M4 14c4 0 6 2 6 3"/></svg>
+    </div>
+    <div>
+      <div class="care-tip-title">Detangle From the Ends</div>
+      <div class="care-tip-desc">Start at the tips with a wide-tooth comb and work your way up. Never brush wet hair from the roots — it stresses the strands and causes shedding.</div>
+    </div>
+  </div>
+  <div class="care-tip-item">
+    <div class="care-tip-icon-wrap">
+      <svg class="care-tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a6 6 0 0 1 12 0v2"/></svg>
+    </div>
+    <div>
+      <div class="care-tip-title">Store on a Stand or in Silk</div>
+      <div class="care-tip-desc">Keep wigs on a wig stand and bundles in a satin or silk bag when not in use. This preserves the pattern and prevents friction damage overnight.</div>
+    </div>
+  </div>
+  <div class="care-tip-item">
+    <div class="care-tip-icon-wrap">
+      <svg class="care-tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4"/><path d="m4.93 4.93 2.83 2.83"/><path d="M2 12h4"/><path d="m4.93 19.07 2.83-2.83"/><path d="M12 18v4"/><path d="m16.24 16.24 2.83 2.83"/><path d="M18 12h4"/><path d="m16.24 7.76 2.83-2.83"/></svg>
+    </div>
+    <div>
+      <div class="care-tip-title">Protect From Heat</div>
+      <div class="care-tip-desc">Use a heat protectant below 180°C for styling, and let curls or waves air-dry when possible to extend the hair's natural texture.</div>
+    </div>
+  </div>
+  <div class="care-tip-item">
+    <div class="care-tip-icon-wrap">
+      <svg class="care-tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18"/><path d="M5 8c0-3 3-5 7-5s7 2 7 5-3 5-7 5-7 2-7 2"/><path d="M19 16c0 3-3 5-7 5s-7-2-7-5"/></svg>
+    </div>
+    <div>
+      <div class="care-tip-title">Sleep on Silk</div>
+      <div class="care-tip-desc">Swap cotton pillowcases for silk or satin to reduce friction and frizz while you sleep — it's the easiest habit change with the biggest payoff.</div>
+    </div>
+  </div>
+  <div class="care-tip-item">
+    <div class="care-tip-icon-wrap">
+      <svg class="care-tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6z"/></svg>
+    </div>
+    <div>
+      <div class="care-tip-title">Deep Condition Weekly</div>
+      <div class="care-tip-desc">A weekly deep-conditioning treatment keeps virgin hair soft and manageable, especially in Dubai's dry, air-conditioned climate.</div>
+    </div>
+  </div>
+</div>
+
+<div class="policy-cta">
+  <a class="checkout-btn" href="shop.html?category=hair-extensions" style="display:inline-flex; width:auto; margin-top:0;">Shop Hair Extensions</a>
+</div>
+
+<!-- Footer -->
+<footer class="footer" style="margin-top:56px;">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand"><span class="logo-word">Dubai</span><span class="logo-accent">Hair</span><span class="logo-word">Shop</span></div>
+      <p class="footer-desc">Premium human hair extensions, bespoke African fashion, and natural skincare, curated for the modern woman in Dubai.</p>
+      <p class="footer-desc" style="margin-bottom:0;">Crystal Tower, 11th Floor<br>Business Bay, Dubai, UAE<br>+971 56 766 0733</p>
+      <div class="social-links">
+        <a class="social-icon" href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a class="social-icon" href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 8h2V4h-2a5 5 0 0 0-5 5v2H8v4h2v6h4v-6h2.5l.5-4H14V9a1 1 0 0 1 1-1z"/></svg>
+        </a>
+        <a class="social-icon" href="#" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M15 3a5 5 0 0 0 5 5"/></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-title">Shop</div>
+      <ul class="footer-links">
+        <li><a href="shop.html?category=hair-extensions">Hair Extensions</a></li>
+        <li><a href="shop.html?category=fashion-design">Fashion Design</a></li>
+        <li><a href="shop.html?category=natural-skincare">Skincare</a></li>
+        <li><a href="shop.html">All Products</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-title">Visit us</div>
+      <ul class="footer-links">
+        <li><a href="about.html#visit">Dubai Studio</a></li>
+        <li><a href="contact.html">Book Appointment</a></li>
+        <li><a href="#">Wholesale</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-title">Help</div>
+      <ul class="footer-links">
+        <li><a href="shipping-returns.html">Shipping & Returns</a></li>
+        <li><a href="hair-care-guide.html">Hair Care Guide</a></li>
+        <li><a href="size-chart.html">Size Chart</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 Dubai Hair Shop. All rights reserved. Designed by <a href="https://www.linkedin.com/in/archbell-maunganidze/" target="_blank" rel="noopener">ArchyTk</a>.
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a class="whatsapp-float" href="https://wa.me/971567660733" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <span class="whatsapp-float-ring"></span>
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.8 8.8 0 0 0 3.16 16.8L2 22l5.36-1.14A8.8 8.8 0 0 0 12 22a8.8 8.8 0 0 0 5.6-15.68zM12 20.2a6.9 6.9 0 0 1-3.53-.96l-.25-.15-2.83.6.6-2.76-.16-.28A6.9 6.9 0 1 1 12 20.2zm3.78-5.17c-.2-.1-1.2-.6-1.39-.66-.19-.07-.32-.1-.46.1-.13.2-.52.66-.64.8-.12.13-.24.15-.44.05-.2-.1-.86-.32-1.63-1.02-.6-.54-1.01-1.2-1.13-1.4-.12-.2-.01-.31.09-.4.09-.1.2-.24.3-.36.1-.12.13-.2.2-.34.07-.13.03-.25-.02-.35-.05-.1-.46-1.1-.63-1.5-.17-.4-.33-.35-.46-.35h-.4c-.13 0-.34.05-.52.25s-.68.67-.68 1.63.7 1.9.8 2.03c.1.13 1.37 2.1 3.32 2.94.46.2.83.32 1.11.4.47.15.9.13 1.24.08.38-.06 1.2-.49 1.37-.96.17-.47.17-.87.12-.96-.05-.09-.18-.14-.38-.24z"/></svg>
+</a>
+
+<!-- Mobile Bottom Nav -->
+<nav class="mobile-bottom-nav">
+  <a href="shop.html" class="bottom-nav-item">
+    <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+    <span class="bottom-nav-label">Shop</span>
+  </a>
+  <a href="wishlist.html" class="bottom-nav-item">
+    <span class="bottom-nav-icon-wrap">
+      <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+      <span class="bottom-nav-badge wishlist-badge" hidden>0</span>
+    </span>
+    <span class="bottom-nav-label">Wishlist</span>
+  </a>
+  <button type="button" class="bottom-nav-item" data-search-trigger>
+    <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <span class="bottom-nav-label">Search</span>
+  </button>
+  <a href="account.html" class="bottom-nav-item">
+    <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    <span class="bottom-nav-label">Account</span>
+  </a>
+  <a href="cart.html" class="bottom-nav-item">
+    <span class="bottom-nav-icon-wrap">
+      <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      <span class="bottom-nav-badge cart-badge" hidden>0</span>
+    </span>
+    <span class="bottom-nav-label">Cart</span>
+  </a>
+</nav>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/wishlist.js"></script>
+<script src="js/product-card.js"></script>
+<script src="js/search.js"></script>
+<script src="js/mobile-nav.js?v=2"></script>
+
+</body>
+</html>
