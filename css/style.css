@@ -1455,7 +1455,7 @@ button.bottom-nav-item {
   border: none;
   padding: 0;
   margin: 0;
-  font: inherit;
+  font-family: inherit;
   cursor: pointer;
   text-align: left;
 }
